@@ -80,6 +80,7 @@ const Wrapper = styled.div`
     }
     .toggle {
       display: block;
+      color: var(--black);
       background: none;
       border: none;
       font-size: 1.75rem;
