@@ -3,8 +3,11 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import SwitchTheme from './SwitchTheme'
+import { useGlobalContext } from '../context'
 
 const Navbar = () => {
+  const { openSidebar } = useGlobalContext()
+
   return (
     <Wrapper>
       <nav className='section-center'>
@@ -13,7 +16,7 @@ const Navbar = () => {
           <h2>
             KIRILL <span>F.</span>
           </h2>
-          <button className='toggle'>
+          <button className='toggle' onClick={openSidebar}>
             <FaBars className='toggle-btn' />
           </button>
         </div>
