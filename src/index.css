@@ -10,7 +10,7 @@ Variables
   /* basic colors */
   --white: #ffffff;
   --grey: #f8f8f8;
-  --black: #1e0d06;
+  --black: #181818;
   --red: #ff0000;
   /* properties */
   --transition: all 0.1 linear;
@@ -20,6 +20,7 @@ Variables
   --max-width: 1170px;
   --min-width: 85vw;
 }
+
 /* 
 ==================
 Basic styles
@@ -117,6 +118,18 @@ p {
 
 /* 
 ==================
-Basic styles
+Dark/light theme switch
 ==================
 */
+
+.dark-theme {
+  --black: #f8f8f8;
+  --grey: #3d3d3d;
+  --white: #212121;
+}
+
+.light-theme {
+  --white: #ffffff;
+  --grey: #f8f8f8;
+  --black: #181818;
+}

@@ -2,7 +2,7 @@ import { links } from '../utils/constants'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
-import { BsMoonStars } from 'react-icons/bs'
+import SwitchTheme from './SwitchTheme'
 
 const Navbar = () => {
   return (
@@ -31,15 +31,7 @@ const Navbar = () => {
         </div>
         {/* end of nav links */}
         {/* switch theme btn */}
-        <div>
-          <button className='switch'>
-            <h4>
-              switch <br />
-              theme
-            </h4>
-            <BsMoonStars />
-          </button>
-        </div>
+        <SwitchTheme />
         {/* end of switch theme btn */}
       </nav>
     </Wrapper>
@@ -75,19 +67,7 @@ const Wrapper = styled.div`
       border-bottom: 2px solid var(--black);
     }
   }
-  .switch {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.5rem;
-    background: transparent;
-    border: transparent;
-    cursor: pointer;
-    color: var(--black);
-    h4 {
-      font-size: 1rem;
-    }
-  }
+
   @media screen and (max-width: 992px) {
     .nav-links {
       display: none;
